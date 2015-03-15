@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; }
+
+.container {
+  margin: 50px 0 0;
+  max-width: 1000px;
+  font-family: 'Helvetica Neue', 'sans serif'; }
+  .container h1 {
+    margin: 0px;
+    font-weight: 400; }
+  .container p {
+    margin: 0px; }
+
+#timeline {
+  width: 600px;
+  float: right;
+  font-weight: 300;
+  color: #666; }
+  #timeline .post,
+  #timeline .page {
+    display: block;
+    position: relative; }
+    #timeline .post h2,
+    #timeline .page h2 {
+      padding: 0 20px; }
+    #timeline .post .content,
+    #timeline .page .content {
+      border-radius: 2px;
+      box-shadow: 0px 0px 5px #ddd;
+      overflow: hidden;
+      border: 1px solid silver;
+      background-color: #fff; }
+    #timeline .post .thumbnail,
+    #timeline .page .thumbnail {
+      height: 600px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    #timeline .post .text,
+    #timeline .page .text {
+      padding: 25px 20px 20px;
+      border-top: 1px solid #eee; }
+      #timeline .post .text p,
+      #timeline .page .text p {
+        font-size: 16px;
+        line-height: 21px; }
+    #timeline .post .comment,
+    #timeline .page .comment {
+      padding: 10px;
+      border-top: 1px solid #eee;
+      opacity: .5; }
+      #timeline .post .comment:hover,
+      #timeline .page .comment:hover {
+        opacity: 1; }
+    #timeline .post .actions,
+    #timeline .page .actions {
+      padding: 8px 20px;
+      font-size: 13px; }
+      #timeline .post .actions a,
+      #timeline .page .actions a {
+        font-weight: bold;
+        color: #999; }
+    #timeline .post .meta,
+    #timeline .page .meta {
+      padding: 15px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #888;
+      border-bottom: 1px solid #e4e4e4; }
+      #timeline .post .meta .gravatar,
+      #timeline .page .meta .gravatar {
+        border-radius: 4px;
+        overflow: hidden;
+        display: inline-block;
+        height: 24px;
+        float: left;
+        margin-right: 10px; }
+      #timeline .post .meta .highlight,
+      #timeline .page .meta .highlight {
+        font-weight: bold; }
+      #timeline .post .meta .post-format,
+      #timeline .page .meta .post-format {
+        font-style: italic; }
+    #timeline .post:last-of-type .meta,
+    #timeline .page:last-of-type .meta {
+      border: none; }
+    #timeline .post .post-text-area,
+    #timeline .post .edit-area,
+    #timeline .page .post-text-area,
+    #timeline .page .edit-area {
+      padding: 10px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    #timeline .post .new-post-menu,
+    #timeline .page .new-post-menu {
+      border-top: 1px solid #eee; }
+      #timeline .post .new-post-menu ul,
+      #timeline .page .new-post-menu ul {
+        list-style: none;
+        padding-left: 15px; }
+        #timeline .post .new-post-menu ul li,
+        #timeline .page .new-post-menu ul li {
+          line-height: 44px;
+          display: inline-block;
+          margin-right: 7px; }
+      #timeline .post .new-post-menu .fa,
+      #timeline .page .new-post-menu .fa {
+        font-size: 22px; }
+        #timeline .post .new-post-menu .fa a,
+        #timeline .page .new-post-menu .fa a {
+          display: block; }
+    #timeline .post input[type="text"],
+    #timeline .post textarea,
+    #timeline .page input[type="text"],
+    #timeline .page textarea {
+      padding: 10px;
+      width: 100%;
+      font: inherit;
+      border: none;
+      resize: none; }
+      #timeline .post input[type="text"]:focus,
+      #timeline .post textarea:focus,
+      #timeline .page input[type="text"]:focus,
+      #timeline .page textarea:focus {
+        outline: none; }
+    #timeline .post.create-new,
+    #timeline .page.create-new {
+      display: none; }
+      #timeline .post.create-new .text textarea,
+      #timeline .page.create-new .text textarea {
+        padding: 0; }
+
+#sidebar {
+  display: block;
+  float: left;
+  width: 290px;
+  box-sizing: border-box;
+  padding: 0 20px 20px;
+  min-height: 300px;
+  border-left: 1px solid #ddd;
+  margin-left: 20px;
+  color: #666;
+  margin-bottom: 30px; }
+  #sidebar h1 {
+    text-transform: uppercase;
+    font-size: 24px; }
+  #sidebar h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: .5px;
+    /*text-shadow: 1px 1px #fff;*/ }
+  #sidebar p {
+    font-weight: 300;
+    color: #999; }
+    #sidebar p.copyright {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 20px; }
+  #sidebar .menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+    display: block; }
+    #sidebar .menu ul li {
+      line-height: 24px;
+      letter-spacing: .5px;
+      font-size: 14px; }
+      #sidebar .menu ul li a {
+        color: inherit; }
+  #sidebar .site-description {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+
+.hide {
+  display: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit; }
+
+button {
+  font: inherit;
+  line-height: 32px;
+  padding: 0 15px;
+  background-color: transparent;
+  color: #666;
+  border-radius: 2px;
+  min-width: 80px;
+  border: 2px solid #666;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer; }
+  button:hover {
+    background-color: #666;
+    color: #fff; }
+  button:focus {
+    outline: none; }
+
+.fa {
+  width: 24px;
+  text-align: center; }
+
+.mobile-view {
+  display: none; }
+
+@media screen and (max-width: 910px) {
+  .mobile-view {
+    display: block; }
+
+  #mobile-header {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    text-align: center; }
+    #mobile-header h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 200; }
+    #mobile-header h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #999;
+      letter-spacing: .5px; }
+    #mobile-header .site-description {
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+
+  .container {
+    margin: 0; }
+
+  #sidebar {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+    color: #CCC; }
+    #sidebar h1,
+    #sidebar .site-description {
+      display: none; }
+
+  #timeline {
+    width: 100%; }
+    #timeline .post .thumbnail,
+    #timeline .page .thumbnail {
+      height: 370px; }
+    #timeline .post .content,
+    #timeline .page .content {
+      margin: 0 10px; }
+    #timeline .post .meta,
+    #timeline .page .meta {
+      font-size: 12px; } }
+
+/*# sourceMappingURL=timeline.css.map */
