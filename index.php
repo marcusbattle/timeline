@@ -5,6 +5,10 @@
 <body>
 	<div class="container">
 		<div id="timeline">
+			<div id="mobile-header" class="mobile-view">
+				<h1><?php echo bloginfo(); ?></h1>
+				<p class="site-description"><?php echo bloginfo('description'); ?></p>
+			</div>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="content">

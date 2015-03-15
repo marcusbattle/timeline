@@ -253,14 +253,17 @@ button {
 
   #timeline {
     width: 100%; }
-    #timeline .post .thumbnail,
-    #timeline .page .thumbnail {
-      height: 370px; }
-    #timeline .post .content,
-    #timeline .page .content {
-      margin: 0 10px; }
-    #timeline .post .meta,
-    #timeline .page .meta {
-      font-size: 12px; } }
+    #timeline .post,
+    #timeline .page {
+      margin-bottom: 30px; }
+      #timeline .post .thumbnail,
+      #timeline .page .thumbnail {
+        height: 370px; }
+      #timeline .post .content,
+      #timeline .page .content {
+        margin: 0 10px; }
+      #timeline .post .meta,
+      #timeline .page .meta {
+        font-size: 12px; } }
 
 /*# sourceMappingURL=timeline.css.map */
